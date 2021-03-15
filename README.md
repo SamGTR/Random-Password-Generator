@@ -1,92 +1,55 @@
 # 03 JavaScript: Password Generator
+This web application is developed as Week-3 Homework requirement.  
+This application, designed using javascript, generates random password based on the criterias selected.
 
-## Your Task
+## Installation
 
-This week’s homework requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+- Git clone the application from : https://github.com/SamGTR/Random-Password-Generator.git
+- Navigate to the index.html.
+- Open the index.html file with any web browser.
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+## Description
 
-## User Story
+The starter code was given for this projects and it was expected to develop full application for generating random password. HTML, CSS and Javascript files are created to make this application generate password.
+- On running the application, user is presented with browser layout with text-box and a button to generate a password.
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+![Application homepage.](./assets/images/2.jpeg)
 
-## Acceptance Criteria
+- When the user clicks the "Generate Password" button, application prompts the user to enter the length of the password between 8 to 128 characters.
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+![Prompt for password length.](./assets/images/7.jpeg)
 
-## Mock-Up
+- If the user does not enter the length of password and click OK or Cancel, then it will show an alert to enter the password length.
 
-The following image shows the web application's appearance and functionality:
+![Alert to enter password length.](./assets/images/4.jpeg)
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+- Once user enters the password length, the application will ask to choose criterias like password containing number, special characters, uppercase and lower case.
 
-## Grading Requirements
+![Criteria confirmation for numbers.](./assets/images/6.jpeg)
 
-This homework is graded based on the following criteria: 
+- If user does not select any of the criterias then, the application will show alert for chosing a criteria.
 
-### Technical Acceptance Criteria: 40%
+![Alert for chosing a criteria.](./assets/images/3.jpeg)
 
-* Satisfies all of the preceding acceptance criteria plus the following:
+- If user enters proper password length and selects related criterias, then a password of selected length and criterias is displayed in the text-area.
 
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
+![Alert for chosing a criteria.](./assets/images/5.jpeg)
 
-### Deployment: 32%
+## Technology
 
-* Application deployed at live URL.
+The web application is developed using HTML, CSS and Javascript files. 
+- The HTML file contains various divs with classes and IDs and also button for generating password.
+- The CSS file includes features like media query for 690px and 500 px. The images on the webpage are located in images folder.
+- The Javascript file consists of eventlistener for noticing clicks, then prompts, alerts and confirms for informing user to take an action.
 
-* Application loads with no errors.
+## Links
 
-* Application GitHub URL submitted.
+Following is the link to the Password Generator application:  
+https://samgtr.github.io/Random-Password-Generator/
 
-* GitHub repository that contains application code.
+Following is the link to the Github repository for Password Generator application:  
+https://github.com/SamGTR/Random-Password-Generator
 
-### Application Quality: 15%
+## License
 
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+MIT
